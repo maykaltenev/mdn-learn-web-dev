@@ -1,0 +1,21 @@
+/* In the below example, we have two rules that could apply to the h1. 
+The h1 ends up being colored blue — these rules have an identical selector
+and therefore carry the same specificity,
+so the last one in the source order wins. */
+h1 {
+  color: red;
+}
+h1 {
+  color: blue;
+}
+
+/* The below h1 ends up being colored red — the class selector gives 
+its rule a higher specificity, and so it will be applied even though
+the rule with the element selector appears further down in 
+the source order. */
+.main-heading {
+  color: red;
+}
+h1 {
+  color: blue;
+}
