@@ -2,20 +2,30 @@
 The h1 ends up being colored blue — these rules have an identical selector
 and therefore carry the same specificity,
 so the last one in the source order wins. */
-h1 {
+/* h1 {
   color: red;
 }
 h1 {
   color: blue;
-}
+} */
 
 /* The below h1 ends up being colored red — the class selector gives 
 its rule a higher specificity, and so it will be applied even though
 the rule with the element selector appears further down in 
 the source order. */
-.main-heading {
+/* .main-heading {
   color: red;
 }
 h1 {
   color: blue;
+} */
+
+/* f you set a color and font-family on an element, every element inside it will also be styled with that color and font, unless you've 
+applied different color and font values directly to them. */
+body {
+  color: blue;
+}
+
+span {
+  color: black;
 }
