@@ -32,7 +32,7 @@ span {
 
 /* The color has applied to the direct children, but also the indirect children — the immediate child <li>s, and those inside the first nested list. We have then added a class- special to the second nested list and applied a different color to it.
  This then inherits down through its children. */
-.main {
+/* .main {
   color: rebeccapurple;
   border: 2px solid #ccc;
   padding: 1em;
@@ -41,4 +41,24 @@ span {
 .special {
   color: black;
   font-weight: bold;
+} */
+body {
+  color: green;
+}
+
+.my-class-1 a {
+  /* 1. if the inheritance rule is removed, the a element becomes by default blue */
+  /* color: inherit; */
+}
+/* 2. The spec lists the initial value of a property in its definition table  */
+.my-class-2 a {
+  color: initial;
+}
+/* 2.Resets the property to its natural value, which means that if the property is naturally inherited it acts like inherit, otherwise it acts like initial. */
+.my-class-3 a {
+  color: unset;
+}
+/* 3. only the default change its color */
+a {
+  color: red;
 }
