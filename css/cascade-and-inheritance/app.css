@@ -22,10 +22,23 @@ h1 {
 
 /* f you set a color and font-family on an element, every element inside it will also be styled with that color and font, unless you've 
 applied different color and font values directly to them. */
-body {
+/* body {
   color: blue;
 }
 
 span {
   color: black;
+} */
+
+/* The color has applied to the direct children, but also the indirect children — the immediate child <li>s, and those inside the first nested list. We have then added a class- special to the second nested list and applied a different color to it.
+ This then inherits down through its children. */
+.main {
+  color: rebeccapurple;
+  border: 2px solid #ccc;
+  padding: 1em;
+}
+
+.special {
+  color: black;
+  font-weight: bold;
 }
