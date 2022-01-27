@@ -4,6 +4,7 @@ body {
   font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
   padding: 1em;
   margin: 0;
+  display: flex;
 }
 
 .parent {
@@ -11,6 +12,10 @@ body {
   border-radius: 0.5em;
   width: 400px;
   height: 300px;
+  /* my solution */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .child {
@@ -18,4 +23,7 @@ body {
   color: #fff;
   padding: 0.5em;
   width: 150px;
+  /* my solution */
+  display: flex;
+  align-self: center;
 }
