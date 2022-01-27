@@ -11,6 +11,9 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  /* my solution */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 li {
@@ -20,4 +23,6 @@ li {
   color: #fff;
   padding: 0.5em;
   margin: 0.5em;
+  /* my solution */
+  flex-grow: 1;
 }
