@@ -81,3 +81,18 @@ article {
     margin-top: 2em;
   }
 }
+/* grid layout can have a responsive design without media queries  */
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+  /* auto fill the number of cards with size min 200px and max 1fr   */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.grid li {
+  border: 1px solid #666;
+  padding: 10px;
+}
