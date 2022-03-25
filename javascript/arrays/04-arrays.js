@@ -8,17 +8,13 @@ const eagleIndex = birds.indexOf("Eagles");
 const eBirds = birds.splice(eagleIndex, 1);
 const stringBirds = eBirds.toString();
 let checker = stringBirds.startsWith('E')
-console.log(stringBirds)
-// console.log(eagleIndex);
-// console.log(eBirds);
-// let birdsToString = birds.toString();
-// console.log(birdsToString);
 for (let i = 0; i < birds.length; i++) {
     let checker = birds[i].startsWith('E');
-    console.log(checker);
-
+    if (checker === true) {
+        eBirds.push(birds[i])
+    }
 }
-
+console.log(eBirds);
 // Don't edit the code below here!
 
 // section.innerHTML = ' ';
